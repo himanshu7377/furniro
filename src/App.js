@@ -4,6 +4,7 @@ import "./App.css";
 import NavBar from "./component/navbar";
 import './global.css'
 import Banner from "./component/banner";
+import CategoryCard from "./component/categorycard";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <div className="App">
         <NavBar />
         <Banner/>
+        <CategoryCard/>
       </div>
     </Router>
   );
