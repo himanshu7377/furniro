@@ -5,7 +5,7 @@ import living from '../asset/living.jpg';
 
 const CategoryCard = () => {
   const containerStyle = 'flex justify-center space-x-12 ';
-  const imageStyle = 'w-full h-full object-fill';
+  const imageStyle = 'w-full h-full object-fill rounded-xl';
   const textContainerStyle = 'text-center mt-2'; // Adjusted margin-top for spacing
 
   return (

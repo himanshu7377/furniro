@@ -6,6 +6,9 @@ import './global.css'
 import Banner from "./component/banner";
 import CategoryCard from "./component/categorycard";
 
+import ItemCart from "./component/itemcart";
+import OurProduct from "./component/ourproduct";
+
 
 function App() {
   return (
@@ -14,6 +17,8 @@ function App() {
         <NavBar />
         <Banner/>
         <CategoryCard/>
+        {/* <ItemCart/> */}
+        <OurProduct/>
       </div>
     </Router>
   );
