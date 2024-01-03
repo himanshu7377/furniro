@@ -6,8 +6,9 @@ import './global.css'
 import Banner from "./component/banner";
 import CategoryCard from "./component/categorycard";
 
-import ItemCart from "./component/itemcart";
+
 import OurProduct from "./component/ourproduct";
+import Explore from "./component/explore";
 
 
 function App() {
@@ -17,8 +18,9 @@ function App() {
         <NavBar />
         <Banner/>
         <CategoryCard/>
-        {/* <ItemCart/> */}
+        
         <OurProduct/>
+        <Explore/>
       </div>
     </Router>
   );
