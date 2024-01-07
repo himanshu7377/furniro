@@ -9,6 +9,7 @@ import CategoryCard from "./component/categorycard";
 
 import OurProduct from "./component/ourproduct";
 import Explore from "./component/explore";
+import ZigZagGallery from './component/ZigZagGallery'
 
 
 function App() {
@@ -18,9 +19,9 @@ function App() {
         <NavBar />
         <Banner/>
         <CategoryCard/>
-        
         <OurProduct/>
         <Explore/>
+        <ZigZagGallery/>
       </div>
     </Router>
   );

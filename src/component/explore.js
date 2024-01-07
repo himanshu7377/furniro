@@ -25,7 +25,7 @@ function Explore() {
   };
 
   return (
-    <div className="max-w-[1100px] mx-auto md:mx-0 px-5 py-10 md:py-5 flex-shrink-0 bg-[#FCF8F3] flex">
+    <div className="max-w-[1200px] mx-auto  flex-shrink-0 bg-[#FCF8F3] flex">
       {/* Left half */}
       <div className="w-full md:w-1/2 flex flex-col items-start justify-center px-4 md:pl-12 mb-8">
         <div className="w-full md:w-[422px] flex-shrink-0 items-start justify-start">
@@ -47,14 +47,19 @@ function Explore() {
       </div>
 
       {/* Right half - Carousel */}
-      <div className='w-full md:w-[404px]'>
+      <div className='w-full  flex space-x-10 '>
+        <div className='w-full md:w-[404px] max-h-full py-5 '>
+          <img src={explore} alt='explore'/>
+        </div>
+      <div className='w-full md:w-[404px] h-10 mt-10 '>
         <Slider {...carouselSettings}>
           {carouselItems.map((item) => (
-            <div key={item.id} className="w-full h-full object-cover overflow-hidden">
+            <div key={item.id} className="w-full max-h-[450px]  object-cover overflow-hidden">
               <img src={item.image} alt={`carousel-${item.id}`} className="w-full h-full" />
             </div>
           ))}
         </Slider>
+      </div>
       </div>
     </div>
   );
